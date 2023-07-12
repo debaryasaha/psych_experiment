@@ -2,6 +2,14 @@
 layout: default
 title: Home
 ---
+<details>
+  <summary>Menu</summary>
+  
+  - [Home](index.md)
+  - [About](about.md)
+  - [Sources](sources.md)
+</details>
+
 # Title of Your Page
 
 ## Introduction
