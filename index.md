@@ -1,11 +1,15 @@
 ---
-layout: default
-title: Home
+layout: page
+title: Do You Really Know Your Colors?
 ---
 <style>
   .menu-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #f2f2f2;
     padding: 10px;
+    font-size: 18px;
   }
 
   .menu-bar a {
@@ -16,8 +20,6 @@ title: Home
 </style>
 
 {% include menu.html %}
-
-# Do You Really Know Your Colors?
 
 # Vocabulary
 
