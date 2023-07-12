@@ -2,13 +2,17 @@
 layout: default
 title: Home
 ---
-<details>
-  <summary>Menu</summary>
-  
-  - [Home](index.md)
-  - [About](about.md)
-  - [Sources](sources.md)
-</details>
+<div style="position: relative;">
+  <div style="position: absolute; top: 0; right: 0;">
+    <details>
+      <summary>Menu</summary>
+      
+      - [Home](index.md)
+      - [About](about.md)
+      - [Sources](sources.rmd)
+    </details>
+  </div>
+</div>
 
 # Title of Your Page
 
