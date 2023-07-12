@@ -27,8 +27,8 @@ Introduce yourself and provide some information about your background and expert
 
 ## Contact Information
 
-- LinkedIn: [LinkedIn Profile](https://www.linkedin.com/in/your_linkedin_username)
-- Github: [Twitter Profile](https://twitter.com/your_twitter_username)
+- LinkedIn: [LinkedIn Profile](www.linkedin.com/in/debarya-saha)
+- Github: [Github Profile](https://www.github.com/debaryasaha)
   
 Email: debarya.saha@gmail.com
 
