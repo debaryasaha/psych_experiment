@@ -1,2 +1,5 @@
-# test1
+---
+layout: default
+---
 
+{% include menu.html %}
