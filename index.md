@@ -1,3 +1,7 @@
+---
+layout: default
+title: Home
+---
 <style>
     .menu-bar {
         background-color: #f2f2f2;
@@ -15,15 +19,28 @@
 
 <div class="menu-bar">
     <a href="index.md">Home</a>
+    <a href="results.rmd">Results</a>
     <a href="about.md">About</a>
     <a href="sources.rmd">Sources</a>
 </div>
----
-layout: default
-title: Home
----
 
 # Do You Really Know Your Colors?
+
+# Vocabulary
+
+Independent Variable -
+
+Dependent Variable - 
+
+Population - 
+
+Experimental Group - 
+
+Control Group - 
+
+P-Value - 
+
+Statistical Significance - 
 
 ## Hypothesis
 
@@ -35,26 +52,4 @@ If a group of high school students are given a set of colored words that are the
 
 Explain the methodology and procedures used in your analysis or experiment.
 
-## Results
 
-Present the results of your analysis or experiment in this section.
-
-### Subsection 1
-
-Provide details or findings for subsection 1.
-
-### Subsection 2
-
-Provide details or findings for subsection 2.
-
-## Discussion
-
-Discuss the implications and interpretation of your results.
-
-## Conclusion
-
-Summarize the main findings and conclusions of your analysis or experiment.
-
-## References
-
-List the references and sources you used for your analysis.
