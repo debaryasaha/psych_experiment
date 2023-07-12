@@ -1,4 +1,3 @@
----
 <style>
   .menu-bar {
     background-color: #f2f2f2;
@@ -13,6 +12,7 @@
 </style>
 
 {% include menu.html %}
+---
 layout: default
 title: Home
 ---
