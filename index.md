@@ -1,7 +1,4 @@
 ---
-layout: default
----
-
 <style>
   .menu-bar {
     background-color: #f2f2f2;
@@ -16,6 +13,9 @@ layout: default
 </style>
 
 {% include menu.html %}
+layout: default
+title: Home
+---
 
 # Do You Really Know Your Colors?
 
