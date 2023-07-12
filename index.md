@@ -1,28 +1,8 @@
 ---
 layout: default
-title: Home
 ---
-<style>
-    .menu-bar {
-        background-color: #f2f2f2;
-        padding: 10px;
-        display: flex;
-        justify-content: space-between;
-    }
 
-    .menu-bar a {
-        margin-right: 10px;
-        color: #333;
-        text-decoration: none;
-    }
-</style>
-
-<div class="menu-bar">
-    <a href="index.md">Home</a>
-    <a href="results.rmd">Results</a>
-    <a href="about.md">About</a>
-    <a href="sources.rmd">Sources</a>
-</div>
+{% include menu.html %}
 
 # Do You Really Know Your Colors?
 
