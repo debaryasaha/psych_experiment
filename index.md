@@ -1,18 +1,27 @@
+<style>
+    .menu-bar {
+        background-color: #f2f2f2;
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .menu-bar a {
+        margin-right: 10px;
+        color: #333;
+        text-decoration: none;
+    }
+</style>
+
+<div class="menu-bar">
+    <a href="index.md">Home</a>
+    <a href="about.md">About</a>
+    <a href="sources.rmd">Sources</a>
+</div>
 ---
 layout: default
 title: Home
 ---
-<div style="position: relative;">
-  <div style="position: absolute; top: 0; right: 0;">
-    <details>
-      <summary>Menu</summary>
-      
-      - [Home](index.md)
-      - [About](about.md)
-      - [Sources](sources.rmd)
-    </details>
-  </div>
-</div>
 
 # Do You Really Know Your Colors?
 
