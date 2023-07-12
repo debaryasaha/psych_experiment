@@ -1,4 +1,4 @@
-theme: jekyll-theme-cayman
+theme: jekyll-theme-merlot
 menu_links:
   - title: Home
     url: index.md
