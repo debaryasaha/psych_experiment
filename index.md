@@ -1,50 +1,56 @@
----
-layout: default
-title: Do You Really Know Your Colors?
----
-<style>
-  .menu-bar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #f2f2f2;
-    padding: 10px;
-    font-size: 18px;
-  }
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Do You Really Know Your Colors?</title>
+  <style>
+    .menu-bar {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #f2f2f2;
+      padding: 10px;
+      font-size: 18px;
+    }
 
-  .menu-bar a {
-    margin-right: 10px;
-    color: #333;
-    text-decoration: none;
-  }
-</style>
+    .menu-bar a {
+      margin-right: 10px;
+      color: #333;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="menu-bar">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="analysis.html">Analysis</a>
+    <a href="sources.html">Sources</a>
+  </div>
 
-{% include menu.html %}
+  <h1>Vocabulary</h1>
 
-# Vocabulary
+  <p><strong>Independent Variable</strong> -</p>
 
-Independent Variable -
+  <p><strong>Dependent Variable</strong> -</p>
 
-Dependent Variable - 
+  <p><strong>Population</strong> -</p>
 
-Population - 
+  <p><strong>Experimental Group</strong> -</p>
 
-Experimental Group - 
+  <p><strong>Control Group</strong> -</p>
 
-Control Group - 
+  <p><strong>P-Value</strong> -</p>
 
-P-Value - 
+  <p><strong>Statistical Significance</strong> -</p>
 
-Statistical Significance - 
+  <h2>Hypothesis</h2>
 
-## Hypothesis
+  <p><strong>Selective Attention</strong> - the processes that allow an individual to select and focus on particular stimuli for further processing while simultaneously suppressing distracting information</p>
 
-Selective Attention - the processes that allow an individual to select and focus on particular stimuli for further processing while simultaneously suppressing distracting information
+  <p>If a group of high school students are given a set of colored words that are the same colors as the word, then students will on average say the words 30% faster when compared to a group that says words that aren’t the same color.</p>
 
-If a group of high school students are given a set of colored words that are the same colors as the word, then students will on average say the words 30% faster when compared to a group that says words that aren’t the same color.
+  <h2>Methodology</h2>
 
-## Methodology
-
-Explain the methodology and procedures used in your analysis or experiment.
-
-
+  <p>Explain the methodology and procedures used in your analysis or experiment.</p>
+</body>
+</html>
