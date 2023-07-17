@@ -2,55 +2,81 @@
 <html>
 <head>
   <title>Do You Really Know Your Colors?</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cayman-theme@2.0.0/dist/css/cayman.min.css">
   <style>
-    .menu-bar {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background-color: #f2f2f2;
-      padding: 10px;
-      font-size: 18px;
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 40px;
     }
 
-    .menu-bar a {
-      margin-right: 10px;
-      color: #333;
-      text-decoration: none;
+    .container h1 {
+      margin-top: 0;
+      font-size: 36px;
+    }
+
+    .container p {
+      margin-bottom: 20px;
+    }
+
+    .container ul {
+      margin-top: 0;
+      padding-left: 20px;
+    }
+
+    .container li {
+      margin-bottom: 10px;
     }
   </style>
 </head>
 <body>
-  <div class="menu-bar">
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="analysis.html">Analysis</a>
-    <a href="sources.html">Sources</a>
+  <header class="header">
+    <div class="container">
+      <h1 class="title">Do You Really Know Your Colors?</h1>
+    </div>
+  </header>
+
+  <nav class="menu">
+    <div class="container">
+      <ul class="menu-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="analysis.html">Analysis</a></li>
+        <li><a href="sources.html">Sources</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container">
+    <main>
+      <h2>Vocabulary</h2>
+
+      <ul>
+        <li><strong>Independent Variable</strong> -</li>
+        <li><strong>Dependent Variable</strong> -</li>
+        <li><strong>Population</strong> -</li>
+        <li><strong>Experimental Group</strong> -</li>
+        <li><strong>Control Group</strong> -</li>
+        <li><strong>P-Value</strong> -</li>
+        <li><strong>Statistical Significance</strong> -</li>
+      </ul>
+
+      <h2>Hypothesis</h2>
+
+      <p><strong>Selective Attention</strong> - the processes that allow an individual to select and focus on particular stimuli for further processing while simultaneously suppressing distracting information</p>
+
+      <p>If a group of high school students are given a set of colored words that are the same colors as the word, then students will on average say the words 30% faster when compared to a group that says words that aren’t the same color.</p>
+
+      <h2>Methodology</h2>
+
+      <p>Explain the methodology and procedures used in your analysis or experiment.</p>
+    </main>
   </div>
 
-  <h1>Vocabulary</h1>
-
-  <p><strong>Independent Variable</strong> -</p>
-
-  <p><strong>Dependent Variable</strong> -</p>
-
-  <p><strong>Population</strong> -</p>
-
-  <p><strong>Experimental Group</strong> -</p>
-
-  <p><strong>Control Group</strong> -</p>
-
-  <p><strong>P-Value</strong> -</p>
-
-  <p><strong>Statistical Significance</strong> -</p>
-
-  <h2>Hypothesis</h2>
-
-  <p><strong>Selective Attention</strong> - the processes that allow an individual to select and focus on particular stimuli for further processing while simultaneously suppressing distracting information</p>
-
-  <p>If a group of high school students are given a set of colored words that are the same colors as the word, then students will on average say the words 30% faster when compared to a group that says words that aren’t the same color.</p>
-
-  <h2>Methodology</h2>
-
-  <p>Explain the methodology and procedures used in your analysis or experiment.</p>
+  <footer class="footer">
+    <div class="container">
+      &copy; 2023 Do You Really Know Your Colors?. All rights reserved.
+    </div>
+  </footer>
 </body>
 </html>
