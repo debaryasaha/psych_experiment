@@ -1,12 +1,12 @@
 theme: jekyll-theme-cayman
 menu_links:
   - title: Home
-    url: index.md
+    url: index.html
   - title: Analysis
     url: analysis.rmd
   - title: Sources
     url: sources.rmd
   - title: About
-    url: about.md
+    url: about.html
   
 
