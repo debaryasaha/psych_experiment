@@ -1,7 +1,7 @@
 theme: jekyll-theme-cayman
 menu_links:
   - title: Home
-    url: index.md
+    url: index.html
   - title: Analysis
     url: analysis.html
   - title: Sources
