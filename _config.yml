@@ -1,14 +1,11 @@
-title: Do You Really Know Your Colors
-description: Psychology Experiment and Analysis
-baseurl: "https://debaryasaha.github.io/psych_experiment/" 
 theme: jekyll-theme-cayman
 menu_links:
   - title: Home
-    url: index.html
+    url: index.md
   - title: Analysis
-    url: analysis.rmd
+    url: analysis.html
   - title: Sources
-    url: sources.rmd
+    url: sources.html
   - title: About
     url: about.html
   
