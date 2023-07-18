@@ -1,10 +1,10 @@
 Experimental,Time_Experimental,Mistakes_Experimental,,Control,Time_Control,Mistakes_Control,,
-1,27,3,,1,14,1,Mistake T-test,0.0000000001017913319
+1,27,3,,1,14,1,,
 2,37,3,,2,24,0,,
 3,29,0,,3,23,0,,
 4,36,1,,4,22,1,,
 5,33,3,,5,17,0,,
-6,14,0,,6,22,0,Time T-test,3.32E-20
+6,14,0,,6,22,0,,
 7,33,1,,7,21,1,,
 8,34,0,,8,43,0,,
 9,26,0,,9,22,0,,
