@@ -27,9 +27,7 @@ title: Sources
   <title>Sources</title>
 </head>
 <body>
-  <h1>Sources</h1>
-
-  <h2>Python Data Analysis</h2>
+  <h1>Python data Analysis</h1>
   <pre>
     <code>
 import numpy as np
@@ -45,9 +43,9 @@ experimental_mistakes = data['Mistakes_Experimental'].values
 control_time = data['Time_Control'].values
 control_mistakes = data['Mistakes_Control'].values
 
-      t_stat, p_value = ttest_ind(experimental_mistakes, control_mistakes)
+t_stat, p_value = ttest_ind(experimental_mistakes, control_mistakes)
 correlation_coef, correlation_p_value = pearsonr(experimental_time, experimental_mistakes)
-      fig, ax = plt.subplots()
+fig, ax = plt.subplots()
 
 ax.scatter(experimental_time, experimental_mistakes, label='Experimental')
 ax.scatter(control_time, control_mistakes, label='Control')
@@ -56,8 +54,7 @@ ax.set_xlabel('Time')
 ax.set_ylabel('Mistakes')
 ax.set_title('Comparison of Time and Mistakes between Experimental and Control')
 ax.legend()
-#tedt1
-plt.show()
+plt.show() #graph 1
       
 print("T-test p-value:", p_value)
 print("Correlation coefficient:", correlation_coef)
@@ -91,7 +88,7 @@ percentage_control_fewer_mistakes_average = (mistakes_difference / experimental_
 
 print("Percentage of instances where control group made fewer mistakes:", percentage_control_fewer_mistakes_instances, "%")
 print("Percentage by which the control group made fewer mistakes on average:", percentage_control_fewer_mistakes_average, "%")
-  labels = ['Control', 'Experimental']
+labels = ['Control', 'Experimental']
 time_means = [np.mean(control_time), np.mean(experimental_time)]
 
 x = np.arange(len(labels))
@@ -105,7 +102,8 @@ ax.set_xticks(x)
 ax.set_xticklabels(labels)
 ax.set_title('Comparison of Time between Control and Experimental')
 
-plt.show()
+plt.show() #graph 2
+  
 labels = ['Control', 'Experimental']
 mistakes_means = [np.mean(control_mistakes), np.mean(experimental_mistakes)]
 
@@ -120,7 +118,7 @@ ax.set_xticks(x)
 ax.set_xticklabels(labels)
 ax.set_title('Comparison of Mistakes between Control and Experimental')
 
-plt.show()
+plt.show() #graph 3
 
     </code>
   </pre>
