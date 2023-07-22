@@ -22,4 +22,111 @@ title: Sources
 
 {% include menu.html %}
 
-# Heading 1
+<html>
+<head>
+  <title>Sources</title>
+</head>
+<body>
+  <h1>Sources</h1>
+
+  <h2>Python Data Analysis</h2>
+  <pre>
+    <code>
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+from scipy.stats import ttest_ind, pearsonr
+
+data = pd.read_csv('RESULTS1.csv')
+Control = data["Control"].values
+Experimental = data["Experimental"].values
+experimental_time = data['Time_Experimental'].values
+experimental_mistakes = data['Mistakes_Experimental'].values
+control_time = data['Time_Control'].values
+control_mistakes = data['Mistakes_Control'].values
+
+      t_stat, p_value = ttest_ind(experimental_mistakes, control_mistakes)
+correlation_coef, correlation_p_value = pearsonr(experimental_time, experimental_mistakes)
+      fig, ax = plt.subplots()
+
+ax.scatter(experimental_time, experimental_mistakes, label='Experimental')
+ax.scatter(control_time, control_mistakes, label='Control')
+
+ax.set_xlabel('Time')
+ax.set_ylabel('Mistakes')
+ax.set_title('Comparison of Time and Mistakes between Experimental and Control')
+ax.legend()
+#tedt1
+plt.show()
+      
+print("T-test p-value:", p_value)
+print("Correlation coefficient:", correlation_coef)
+print("Correlation p-value:", correlation_p_value)
+print("Mean Time (Control)", np.mean(control_time))
+print("Mean Time (Experimental)", np.mean(experimental_time))
+print("Mean Mistakes (Control)", np.mean(control_mistakes))
+print("Mean Mistakes (Experimental)", np.mean(experimental_mistakes))
+num_instances = len(control_time)  # Total number of instances
+num_control_faster = sum(control_time < experimental_time)  # Number of instances where control is faster
+
+percentage_control_faster = (num_control_faster / num_instances) * 100
+
+print("Percentage of instances where control group said words faster:", percentage_control_faster, "%")
+control_avg_time = np.mean(control_time)  # Average time of the control group
+experimental_avg_time = np.mean(experimental_time)  # Average time of the experimental group
+
+time_difference = experimental_avg_time - control_avg_time
+percentage_control_faster = (time_difference / experimental_avg_time) * 100
+
+print("Percentage by which the control group said words faster on average:", percentage_control_faster, "%")
+num_control_fewer_mistakes = sum(control_mistakes < experimental_mistakes)  # Number of instances where control has fewer mistakes
+
+percentage_control_fewer_mistakes_instances = (num_control_fewer_mistakes / num_instances) * 100
+
+control_avg_mistakes = np.mean(control_mistakes)  # Average mistakes of the control group
+experimental_avg_mistakes = np.mean(experimental_mistakes)  # Average mistakes of the experimental group
+
+mistakes_difference = experimental_avg_mistakes - control_avg_mistakes
+percentage_control_fewer_mistakes_average = (mistakes_difference / experimental_avg_mistakes) * 100
+
+print("Percentage of instances where control group made fewer mistakes:", percentage_control_fewer_mistakes_instances, "%")
+print("Percentage by which the control group made fewer mistakes on average:", percentage_control_fewer_mistakes_average, "%")
+  labels = ['Control', 'Experimental']
+time_means = [np.mean(control_time), np.mean(experimental_time)]
+
+x = np.arange(len(labels))
+width = 0.35
+
+fig, ax = plt.subplots()
+rects = ax.bar(x, time_means, width)
+
+ax.set_ylabel('Time')
+ax.set_xticks(x)
+ax.set_xticklabels(labels)
+ax.set_title('Comparison of Time between Control and Experimental')
+
+plt.show()
+labels = ['Control', 'Experimental']
+mistakes_means = [np.mean(control_mistakes), np.mean(experimental_mistakes)]
+
+x = np.arange(len(labels))
+width = 0.35
+
+fig, ax = plt.subplots()
+rects = ax.bar(x, mistakes_means, width)
+
+ax.set_ylabel('Mistakes (avg)')
+ax.set_xticks(x)
+ax.set_xticklabels(labels)
+ax.set_title('Comparison of Mistakes between Control and Experimental')
+
+plt.show()
+
+    </code>
+  </pre>
+
+  <h2>Other Source Information</h2>
+  <p>Here you can include other sources, references, and citations related to your psychology experiment.</p>
+
+</body>
+</html>
